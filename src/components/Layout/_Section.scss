@@ -1,8 +1,12 @@
 // Column Layout component
+@import "../../sass/colors.scss";
+@import "../../sass/flex.scss";
 
-.Column {
+.section {
   width: 100%;
   border: 1px hotpink solid;
+
+  // WIDTHS
   &.three-quarters {
     width: 75%;
   }
@@ -17,5 +21,13 @@
   }
   &.one-third {
     width: 33%;
+  }
+
+  // FLEX PROPERTIES
+  &.flex {
+    @include flex();
+  }
+  &.flex.column {
+    @include flex-direction(column);
   }
 }
