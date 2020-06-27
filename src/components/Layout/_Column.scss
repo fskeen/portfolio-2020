@@ -1,0 +1,21 @@
+// Column Layout component
+
+.Column {
+  width: 100%;
+  border: 1px hotpink solid;
+  &.three-quarters {
+    width: 75%;
+  }
+  &.half {
+    width: 50%;
+  }
+  &.quarter {
+    width: 25%;
+  }
+  &.two-thirds {
+    width: 66%;
+  }
+  &.one-third {
+    width: 33%;
+  }
+}
