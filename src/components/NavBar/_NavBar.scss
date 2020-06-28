@@ -1,0 +1,35 @@
+@import "../../sass/colors.scss";
+@import "../../sass/flex.scss";
+
+// html {
+//   height: 100%;
+// }
+// body {
+//   min-height: 100%;
+// }
+.navbar {
+  background-color: $wine;
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: $gold;
+    }
+  }
+  @include align-items(center);
+  @include flex();
+  @include justify-content(center);
+  @include flex-direction(column);
+}
+
+.header-icon {
+  width: 100px;
+  height: 100px;
+  background-color: $teal;
+  border-radius: 15px;
+  margin: 10px;
+  @include flex();
+  @include justify-content(center);
+  @include align-items(center);
+  font-size: 50px;
+}
