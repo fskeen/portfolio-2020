@@ -1,7 +1,11 @@
 @import "../sass/colors.scss";
 
 .home {
-  position: fixed;
-  height: 100%;
+  // position: fixed;
+  width: 100vw;
+  height: 100vh;
   background-color: $peach;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr;
 }
