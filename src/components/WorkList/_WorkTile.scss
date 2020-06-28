@@ -1,0 +1,12 @@
+@import "../../sass/colors.scss";
+@import "../../sass/flex.scss";
+
+.work-tile {
+  border: 1px solid gold;
+  @include flex();
+  img {
+    margin: 10px;
+    width: 150px;
+  }
+  margin: 15px;
+}

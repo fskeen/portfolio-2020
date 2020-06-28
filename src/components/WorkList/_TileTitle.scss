@@ -1,0 +1,9 @@
+@import "../../sass/colors.scss";
+@import "../../sass/flex.scss";
+
+.tile-title {
+  @include flex();
+  @include align-items(baseline);
+  border: 1px solid navajowhite;
+  width: fit-content;
+}
