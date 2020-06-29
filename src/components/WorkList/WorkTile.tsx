@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./_WorkTile.scss";
 import TileTitle from "./TileTitle";
-import ShowMoreBtn from "../Layout/Buttons/ShowMoreBtn";
+import TileDescription from "./TileDescription";
 
 const WorkTile = (props: any) => {
   const { project } = props;
@@ -11,9 +11,8 @@ const WorkTile = (props: any) => {
       <img src={project.image} alt="alt" />
       <div>
         <TileTitle title={project.title} skillList={project.skills} />
-        <p>{project.description}</p>
+        <TileDescription description={project.description} />
       </div>
-      <ShowMoreBtn showMore={showMore} setShowMore={setShowMore} />
     </div>
   );
 };
