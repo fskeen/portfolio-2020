@@ -3,6 +3,7 @@ import { Section } from "../components/Layout/Section";
 import NavBar from "../components/NavBar/NavBar";
 import "./_Home.scss";
 import WorkList from "../components/WorkList/WorkList";
+import Contact from "./Contact";
 
 const Home = () => {
   const workRef = useRef();
@@ -16,7 +17,10 @@ const Home = () => {
     <main className="home">
       <NavBar />
       {/* <h1>Home</h1> */}
-      <WorkList />
+      <div className="main-content">
+        <WorkList />
+        <Contact />
+      </div>
     </main>
   );
 };

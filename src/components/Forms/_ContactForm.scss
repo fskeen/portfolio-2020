@@ -1,0 +1,44 @@
+@import "../../sass/colors.scss";
+@import "../../sass/flex.scss";
+
+.contact-form {
+  @include flex();
+  @include flex-direction(column);
+  width: 80%;
+
+  div {
+    @include flex();
+    @include justify-content(space-between);
+    width: 100%;
+    span {
+      @include flex();
+      @include flex-direction(column);
+      width: 48%;
+    }
+  }
+
+  label {
+    background-color: $gold;
+    padding: 3px 12px;
+    // border-radius: 15px;
+    // border: 6px solid $peach;
+    width: fit-content;
+    position: relative;
+    // top: 15px;
+    // right: 10px;
+  }
+
+  #name,
+  #email {
+    border: none;
+    padding: 15px;
+    padding-top: 30px;
+  }
+
+  #message {
+    border: none;
+    padding: 15px;
+    min-height: 100px;
+    margin-bottom: 10px;
+  }
+}

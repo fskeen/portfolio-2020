@@ -1,7 +1,13 @@
 import React from "react";
+import ContactForm from "../components/Forms/ContactForm";
 
-const Home = () => {
-  return <h1>Contact</h1>;
+const Contact = () => {
+  return (
+    <section className="contact-page">
+      <h2>Contact</h2>
+      <ContactForm />
+    </section>
+  );
 };
 
-export default Home;
+export default Contact;
