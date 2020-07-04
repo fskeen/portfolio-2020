@@ -1,0 +1,16 @@
+@import "../styles/colors.scss";
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  background-color: $peach;
+  display: grid;
+  grid-template-areas: "nav main";
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 100vh;
+}
+
+.main-content {
+  grid-area: main;
+  overflow-y: scroll;
+}

@@ -1,0 +1,33 @@
+// Column Layout component
+@import "../../styles/colors.scss";
+@import "../../styles/flex.scss";
+
+// .section {
+//   width: 100%;
+//   border: 1px hotpink solid;
+
+//   // WIDTHS
+//   &.three-quarters {
+//     width: 75%;
+//   }
+//   &.half {
+//     width: 50%;
+//   }
+//   &.quarter {
+//     width: 25%;
+//   }
+//   &.two-thirds {
+//     width: 66%;
+//   }
+//   &.one-third {
+//     width: 33%;
+//   }
+
+//   // FLEX PROPERTIES
+//   &.flex {
+//     @include flex();
+//   }
+//   &.flex.column {
+//     @include flex-direction(column);
+//   }
+// }
