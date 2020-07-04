@@ -6,7 +6,7 @@ const WorkTile = (props: any) => {
   const { description } = props;
   const [showMore, setShowMore] = useState(false);
   return (
-    <div className="tile-description">
+    <div className={`tile-description ${showMore ? "show-more" : ""}`}>
       <p>{description}</p>
       <ShowMoreBtn showMore={showMore} setShowMore={setShowMore} />
     </div>

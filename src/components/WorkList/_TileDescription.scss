@@ -1,0 +1,11 @@
+.tile-description {
+  transition: all 0.4s ease-out;
+  min-height: 150px;
+  height: 150px;
+  line-height: 1.5;
+}
+
+.tile-description.show-more {
+  height: 500px;
+  transition: all 0.2s ease-out;
+}
