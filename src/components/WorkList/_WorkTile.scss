@@ -6,8 +6,9 @@
   @include flex();
   img {
     margin: 10px;
-    width: 150px;
+    max-width: 150px;
+    height: fit-content;
   }
   margin: 15px;
-  max-width: 950px;
+  max-width: 1050px;
 }
