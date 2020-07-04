@@ -1,5 +1,5 @@
-@import "../../sass/colors.scss";
-@import "../../sass/flex.scss";
+@import "../../styles/colors.scss";
+@import "../../styles/flex.scss";
 
 .work-tile {
   border: 1px solid gold;
@@ -9,4 +9,5 @@
     width: 150px;
   }
   margin: 15px;
+  max-width: 950px;
 }

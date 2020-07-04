@@ -5,5 +5,10 @@ $gold: #ffbd68;
 $teal: #8bbcb6;
 
 // DAY MODE
-
+.light-theme {
+  :root {
+    --primary: #{$peach};
+    --secondary: #{$gold};
+  }
+}
 // NIGHT MODE
