@@ -1,9 +1,11 @@
 import React, { useRef } from "react";
 import { Section } from "../components/Layout/Section";
 import NavBar from "../components/NavBar/NavBar";
+import "../styles/imports.scss";
 import "./_Home.scss";
 import WorkList from "../components/WorkList/WorkList";
 import Contact from "./Contact";
+import About from "./About";
 
 const Home = () => {
   const workRef = useRef();
@@ -14,10 +16,11 @@ const Home = () => {
     top: topRef
   };
   return (
-    <main className="home">
+    <main className="home default-theme">
       <NavBar />
       {/* <h1>Home</h1> */}
       <div className="main-content">
+        <About />
         <WorkList />
         <Contact />
       </div>
