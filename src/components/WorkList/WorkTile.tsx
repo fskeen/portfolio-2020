@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./_WorkTile.scss";
 import TileTitle from "./TileTitle";
 import TileDescription from "./TileDescription";
+import ViewButtons from "./ViewButtons";
 
 const WorkTile = (props: any) => {
   const { project } = props;
@@ -13,6 +14,10 @@ const WorkTile = (props: any) => {
         <TileTitle title={project.title} skillList={project.skills} />
         <TileDescription description={project.description} />
       </div>
+      <ViewButtons
+        githubLink={project.githubUrl}
+        deployedLink={project.deployedUrl}
+      />
     </div>
   );
 };
