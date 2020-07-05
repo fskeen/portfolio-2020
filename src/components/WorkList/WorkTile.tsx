@@ -10,7 +10,7 @@ const WorkTile = (props: any) => {
   return (
     <div className="work-tile">
       <img src={project.image} alt="alt" />
-      <div>
+      <div className="tile-text-container">
         <TileTitle title={project.title} skillList={project.skills} />
         <TileDescription description={project.description} />
       </div>
