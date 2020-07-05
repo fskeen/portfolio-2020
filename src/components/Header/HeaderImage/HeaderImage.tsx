@@ -10,7 +10,7 @@ const HeaderImage = () => {
       <span className="cloud">IMAGE HERE</span>
       <span className="cloud">IMAGE HERE</span>
       <span className="cloud">IMAGE HERE</span>
-      <h1>Hey there! I'm Faye.</h1>
+      <h1>Hey there! I'm Faye, a web developer.</h1>
     </div>
   );
 };
