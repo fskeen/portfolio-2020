@@ -17,6 +17,11 @@
   &:hover {
     background-color: plum;
   }
+  transition: max-width 0.3s ease, max-height 0.3s ease;
+  @media (max-width: 1400px) {
+    max-height: 50px;
+    transition: max-width 0.3s ease, max-height 0.3s ease;
+  }
 }
 
 .view-button-container {

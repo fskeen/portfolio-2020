@@ -1,3 +1,9 @@
+@import "../../styles/flex.scss";
+
 .worklist {
-  padding-left: 20px;
+  padding: 20px;
+  @include flex();
+  @include flex-direction(column);
+  @include align-items(center);
+  width: 100%;
 }
