@@ -8,6 +8,10 @@
   grid-template-areas: "nav main";
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 100vh;
+  &.hidden-nav {
+    grid-template-areas: "main";
+    grid-template-columns: 100%;
+  }
 }
 
 .main-content {
