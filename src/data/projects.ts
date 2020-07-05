@@ -9,8 +9,7 @@ export const projects = [
       "https://picsum.photos/id/545/800/500",
       "https://picsum.photos/id/545/800/500"
     ],
-    primarySkills: ["React.js", "Node.js"],
-    skills: ["HTML", "CSS", "React.js"],
+    skills: ["React.js", "Node.js", "HTML", "CSS", "React.js"],
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     deployedUrl: "https://www.allegiance17.com/",
@@ -26,8 +25,7 @@ export const projects = [
       "https://picsum.photos/id/545/800/500",
       "https://picsum.photos/id/545/800/500"
     ],
-    primarySkills: ["JavaScript", "Node.js"],
-    skills: ["HTML", "CSS", "React.js"],
+    skills: ["JavaScript", "Node.js", "HTML", "CSS", "React.js"],
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     deployedUrl: "https://www.allegiance17.com/",
@@ -60,7 +58,6 @@ export const projects = [
       "https://picsum.photos/id/545/800/500",
       "https://picsum.photos/id/545/800/500"
     ],
-    primarySkills: ["React.js", "Node.js"],
     skills: ["HTML", "CSS", "React.js"],
     description:
       "Cake oat cake pudding. Lemon drops sweet marzipan brownie chocolate jelly. Gingerbread jelly-o sweet oat cake pudding. Macaroon marzipan sweet liquorice chupa chups ice cream candy danish. Bear claw marzipan macaroon oat cake candy canes halvah gingerbread. Jelly ice cream marzipan marzipan chocolate tart liquorice.",
@@ -77,7 +74,6 @@ export const projects = [
       "https://picsum.photos/id/545/800/500",
       "https://picsum.photos/id/545/800/500"
     ],
-    primarySkills: ["React.js", "Node.js"],
     skills: ["HTML", "CSS", "React.js"],
     description:
       "Fruitcake carrot cake lollipop donut sesame snaps. Sesame snaps gummi bears pastry lemon drops cupcake. Gummi bears liquorice halvah toffee. Pudding soufflé chupa chups. Icing jujubes caramels tootsie roll chocolate marzipan. Pudding halvah chupa chups macaroon cheesecake dessert. Pastry croissant cake bear claw gummies. Sugar plum cake liquorice brownie. Cheesecake cookie jelly tart marzipan toffee tiramisu jelly.",
