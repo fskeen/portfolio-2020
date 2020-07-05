@@ -1,9 +1,24 @@
 @import "../../styles/flex.scss";
 
+$base-parallax-perspective: 8px;
+
+@function parallax-scale-factor($z-distance) {
+  @return ($base-parallax-perspective - $z-distance) /
+    $base-parallax-perspective;
+}
+
 .worklist {
-  padding: 20px;
+  background-color: #579957;
+  background-image: linear-gradient(0deg, #6db769, transparent);
+  padding: 100px 0;
   @include flex();
   @include flex-direction(column);
   @include align-items(center);
   width: 100%;
+  transform-origin: top left;
+  top: -100px;
+  position: relative;
+  transform: translateZ(1.8px) scale(parallax-scale-factor(1.8));
+  // position: absolute;
+  // top: 0;
 }

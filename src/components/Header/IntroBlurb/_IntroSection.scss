@@ -1,5 +1,12 @@
 @import "../../../styles/flex";
 
+$base-parallax-perspective: 8px;
+
+@function parallax-scale-factor($z-distance) {
+  @return ($base-parallax-perspective - $z-distance) /
+    $base-parallax-perspective;
+}
+
 .intro-section {
   @include flex();
   @include align-items(center);
@@ -11,4 +18,23 @@
   &:nth-of-type(2) {
     @include flex-direction(row-reverse);
   }
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transform-origin: 0;
+  transform: translateZ(1.5px) scale(parallax-scale-factor(1.5));
+}
+
+.farmhouse {
+  align-self: flex-end;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -90px;
+  right: 20%;
+  z-index: 3;
 }

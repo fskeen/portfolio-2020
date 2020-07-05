@@ -1,0 +1,13 @@
+$base-parallax-perspective: 8px;
+
+@function parallax-scale-factor($z-distance) {
+  @return ($base-parallax-perspective - $z-distance) /
+    $base-parallax-perspective;
+}
+
+.contact-page {
+  transform-origin: 0;
+  transform: translateZ(2.5px) scale(parallax-scale-factor(2.5));
+  position: relative;
+  top: -300px;
+}

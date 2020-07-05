@@ -1,12 +1,19 @@
 @import "../styles/colors.scss";
 
+$base-parallax-perspective: 8px;
+
+@function parallax-scale-factor($z-distance) {
+  @return ($base-parallax-perspective - $z-distance) /
+    $base-parallax-perspective;
+}
+
 .home {
   width: 100vw;
   height: 100vh;
-  background-color: $peach;
+  background-color: #579957;
   display: grid;
   grid-template-areas: "nav main";
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 100px 5fr;
   grid-template-rows: 100vh;
   &.hidden-nav {
     grid-template-areas: "main";
@@ -14,7 +21,18 @@
   }
 }
 
-.main-content {
+.parallax-container {
+  display: flex;
+  flex-direction: column;
   grid-area: main;
   overflow-y: scroll;
+  perspective: $base-parallax-perspective;
+  perspective-origin: 0%;
+  -webkit-overflow-scrolling: touch;
+}
+.main-content {
+  // overflow-x: hidden;
+  margin-top: 65vh;
+  transform-origin: 0;
+  transform: translateZ(1.5px) scale(parallax-scale-factor(1.5));
 }
